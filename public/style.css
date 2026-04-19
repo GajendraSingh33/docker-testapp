@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+#formBtn {
+    color: white;
+    background-color:coral;
+    border: none;
+    border-radius: 2px;
+    padding: 0.25rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form {
+    border: 2px solid grey;
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: left;
+}
+
+.field {
+    margin-bottom: 0.5rem;
+}
