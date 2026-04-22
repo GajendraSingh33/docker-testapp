@@ -8,6 +8,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: qwerty
+    volumes:                                                        # FOR MOUNTING THE VOLUME TO PERSIST THE DATA
+    - "/Users/gajendra/Desktop/SEM 6/docker-testapp/mongo_database:/data/db"
 
 
   mongo-express:
@@ -23,8 +25,8 @@ services:
 ## docker compose commands:
 
 # 1. to create and run the containers:
-# docker compose -f fileName.yaml up -d
+# docker compose -f mongodb.yaml up -d
 
 # 2. to delete the container permanatly
-# docker compose -f fileName.yaml down
+# docker compose -f mongodb.yaml down
 
